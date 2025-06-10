@@ -3,9 +3,9 @@
 # All configurations are filled with default values, and you can remove any that you don't need.
 
 # Project identifier used for namespacing functions and tags. Should align with the namespace in the source folder.
-id: "blank_template"
+id: "basic_template"
 # Project name that will be used in messages, item lore, etc.
-name: "Blank Template"
+name: "Basic Template"
 # Pack description for pack.mcmeta. Defaults to "{name} [{version}] by {author}" if empty.
 description: ""
 # Author(s) name(s) displayed in pack.mcmeta, also used to add 'convention.debug' tag to the players of the same name(s) <-- showing additionnal displays like datapack loading
