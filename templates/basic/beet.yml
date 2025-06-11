@@ -80,6 +80,7 @@ meta:
     mecha:
         multiline: true
         match: ["_your_namespace:**"]
+        formatting: preserve
 
     # Python datapack specific configuration
     stewbeet:
