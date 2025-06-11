@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>🛠️ Welcome to Stewbeet Documentation &#8212; StewBeet</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=6d4b8ac6"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="icon" href="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="stewbeet package" href="modules/stewbeet.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png" class="logo__image only-dark" alt="StewBeet - Home"/>
+    <img src="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png" class="logo__image only-light pst-js-only" alt="StewBeet - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="modules/stewbeet.html">
+    stewbeet package
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="modules/stewbeet.html">
+    stewbeet package
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="welcome-to-stewbeet-documentation">
+<h1>🛠️ Welcome to Stewbeet Documentation<a class="headerlink" href="#welcome-to-stewbeet-documentation" title="Link to this heading">#</a></h1>
+<p><strong>Versions</strong>: <a class="reference external" href="../latest/">latest</a></p>
+<a class="reference external image-reference" href="https://www.youtube.com/watch?v=zkcQn23DRaw"><img alt="YouTube" src="https://img.shields.io/youtube/views/zkcQn23DRaw?style=flat&amp;logo=youtube&amp;logoColor=red&amp;label=YouTube" />
+</a>
+<a class="reference external image-reference" href="https://github.com/Stoupy51/stewbeet/releases/latest"><img alt="GitHub" src="https://img.shields.io/github/v/release/Stoupy51/stewbeet?logo=github&amp;label=GitHub" />
+</a>
+<a class="reference external image-reference" href="https://www.planetminecraft.com/data-pack/python-datapack/"><img alt="PMC" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fwww.planetminecraft.com%2Fdata-pack%2Fpython-datapack%2Fstatsv2&amp;query=%24.downloads&amp;logo=data%3Aimage%2Fvnd.microsoft.icon%3Bbase64%2CAAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJdNAUBLJgD%2FSyYA%2FxkoD%2F8vKAn%2Fl00BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FwAAAP8AAAD%2FmVgI%2F0tcHf8CXjP%2FL10l%2FwAAAP8AAAD%2FAAAA%2FwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2F5VOAf%2BVTQH%2FfVkP%2FyZ%2BOv8BgET%2FAYBE%2FwGARP9LZyP%2FlU0B%2F5ZNAf8AAAD%2FAAAAAAAAAAAAAAAAAAAAAJVOAf%2FYeRL%2F64wl%2F7eZOP8Bo1f%2FAaNW%2FwGjVv88nkv%2F2oEb%2F9N0Df%2FTdA3%2FlU0B%2F5dNAUAAAAAAAAAAAAAAAACkVQH%2F3pAq%2F6CcOv92pUf%2FLLli%2F12zW%2F%2FBqEv%2Fy59B%2F%2B2OJ%2F%2Figxz%2F03QN%2F5VNAf%2BEUARAAAAAAAAAAAAAAAD%2FjoMq%2Fzi2XP96r1T%2F3ahG%2F%2BCvUP%2F9qkr%2F%2F6hL%2F%2F2kRP%2F2mTT%2F7Y4n%2F%2BCBGv93aRf%2FAAAA%2FwAAAAAAAAAAp1gB%2FxHEb%2F%2BlslX%2F36xL%2F9StTP%2F%2Fp0f%2F%2F6VE%2F%2F%2BqTv%2F%2Fqk7%2F%2FaVH%2F%2FecOf%2Ftjif%2FMIQ3%2FwNhMP8AAAAAAAAAAI9bA%2F8SxXD%2FHr5o%2Fzm8ZP%2Fvo0D%2F%2F6I9%2F%2F%2BiPf%2F%2Fq1D%2F%2F6tQ%2F%2F%2BrUP%2F7pEb%2F7Y4n%2FwGCQf8BYDD%2FAAAAAAAAAAB8Wgz%2FFMdy%2FxDDbv8Qw27%2Fh7Zd%2F%2F%2BnSP%2F%2Foj3%2F%2F6xS%2F%2F%2BsUv%2F%2Fp0j%2F%2B504%2F%2B2OJ%2F%2BUfyH%2FAWIw%2FwAAAAAAAAAAelsL%2Fwa2Y%2F8TxnH%2FieK4%2F9fu2P%2F%2F2rH%2F%2F6pN%2F%2F%2BlQv%2F%2FpUL%2F%2F6NA%2F%2F2fOv%2F1li%2F%2FlH8h%2FwJhMP8AAAAAqVcBQIFaCkABczz%2FFMdy%2F7Hs0P%2F%2F%2F%2F%2F%2F6O7W%2F9SyV%2F%2F%2Foj3%2F%2F6RC%2F%2FidOv%2Fxkyz%2FxJEw%2F01fGf8hWR1wAVQqQAAAAAAAAAAAAV4y%2Fw2%2Fa%2F%2Bs16b%2F1OfK%2F7%2Fdr%2F%2F%2BrFH%2F%2F6RB%2F%2F%2BmRv%2F2mzn%2F2Y4p%2F2qOOP8BVCr%2FJDorQAAAAAAAAAAAAAAAAAFeMv8BsF7%2FLbpl%2F0DAaP%2Bmtlz%2Fo7Vc%2F%2F%2BoS%2F%2F%2FqEv%2F9ps6%2FyeOQf8BjUb%2FAlQq%2FwFUKkAAAAAAAAAAAAAAAAAAAAAAAl0z%2FxheKf8PdTL%2FeqxN%2FyvDaf%2F8rVL%2Fz6dF%2F7R6H%2F8BXS7%2FAlQq%2FwdRKwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGUCICeF4GQGNfDP9sXwj%2FqFgB%2F4hbB%2F9DWiKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKpXAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FB8AAOAHAADAAwAAwAMAAMADAACAAQAAgAEAAIABAACAAQAAgAEAAMADAADAAwAAwAMAAOAHAAD8H%2F%2F%2F%2F%2F%2F%2F%2Fw%3D%3D&amp;label=PMC&amp;color=6ec310" />
+</a>
+<a class="reference external image-reference" href="https://discord.gg/anxzu6rA9F"><img alt="Discord" src="https://img.shields.io/discord/1216400498488377467?label=Discord&amp;logo=discord" />
+</a>
+<a class="reference external image-reference" href="https://pypi.org/project/stewbeet/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/stewbeet?logo=python&amp;label=PyPI%20downloads" />
+</a>
+<section id="what-is-stewbeet">
+<h2>❓ What is <code class="docutils literal notranslate"><span class="pre">StewBeet</span></code><a class="headerlink" href="#what-is-stewbeet" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">StewBeet</span></code> is a <a class="reference external" href="https://github.com/mcbeet/beet">Beet</a> framework and library 📦 aiming to provide huge automation for creating Minecraft datapacks.<span class="raw-html-m2r"><br></span>
+It is designed to be very simple to use and very convenient for developers.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Example</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">in-game</span> <span class="pre">manual</span> <span class="pre">generated</span> <span class="pre">by</span> <span class="pre">StewBeet:</span></code><span class="raw-html-m2r"><br></span></p>
+<a class="reference external image-reference" href="https://i.imgur.com/dtuAG99.gif"><img alt="In-game Manual Example" src="https://i.imgur.com/dtuAG99.gif" />
+</a>
+<p>Here is a list of features that the package provides (the template is using all of them with clear comments):</p>
+<ul class="simple">
+<li><p>🔄 Automatic resource pack files generation (models, textures, sounds, music discs) with the ability to override them with help of the <code class="docutils literal notranslate"><span class="pre">assets</span></code> folder.</p></li>
+<li><p>⏳ Versioned load, and clock functions such as <code class="docutils literal notranslate"><span class="pre">tick</span></code>, <code class="docutils literal notranslate"><span class="pre">second</span></code>, <code class="docutils literal notranslate"><span class="pre">minute</span></code>.</p></li>
+<li><p>🗃️ Loot tables for every item in the <code class="docutils literal notranslate"><span class="pre">definitions</span></code> along with a proper <code class="docutils literal notranslate"><span class="pre">_give_all</span></code> function that gives named chests.</p></li>
+<li><p>📖 Automatic generation of a really <cite>advanced and interactive items ``manual`</cite> &lt;./assets/in_game_manual_example.png&gt;`_.</p></li>
+<li><p>📝 Automatic generation of a <code class="docutils literal notranslate"><span class="pre">en-us.json</span></code> lang file in the resource pack if configuration is set.</p></li>
+<li><p>🖼️ Automatic headers for every function in <code class="docutils literal notranslate"><span class="pre">function</span></code> folders.</p></li>
+<li><p>📦 Minecraft like vanilla recipes unlocking.</p></li>
+<li><p>📚 Official libraries integrations:</p>
+<ul>
+<li><p>🧪 Automatic support for NBT Recipes with <cite>``Smithed Crafter`</cite> &lt;<a class="reference external" href="https://wiki.smithed.dev/libraries/crafter/">https://wiki.smithed.dev/libraries/crafter/</a>&gt;`_ and <cite>``Furnace NBT Recipes`</cite> &lt;<a class="github reference external" href="https://github.com/Stoupy51/FurnaceNbtRecipes/">Stoupy51/FurnaceNbtRecipes</a>&gt;`_</p></li>
+<li><p>🛠️ Placement and destruction for every custom block in the <code class="docutils literal notranslate"><span class="pre">definitions</span></code> with support for blockstates, ore drops (fortune, silk touch), with <cite>``Smithed Custom Blocks`</cite> &lt;<a class="reference external" href="https://wiki.smithed.dev/libraries/custom-block/">https://wiki.smithed.dev/libraries/custom-block/</a>&gt;`_.</p></li>
+<li><p>📚 Each module from <cite>``Bookshelf`</cite> &lt;<a class="github reference external" href="https://github.com/mcbookshelf/bookshelf">mcbookshelf/bookshelf</a>&gt;`_ is automatically added if you are using it, ex: <code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">#bs.math:...</span></code> will add the <code class="docutils literal notranslate"><span class="pre">bs.math</span></code> module to the datapack.</p></li>
+<li><p>⛏️ Custom ore generation with <cite>``Smart Ore Generation`</cite> &lt;<a class="github reference external" href="https://github.com/Stoupy51/SmartOreGeneration">Stoupy51/SmartOreGeneration</a>&gt;`_.</p></li>
+<li><p>📦 Item transportation / container declaration with <cite>``ItemIO`</cite> &lt;<a class="github reference external" href="https://github.com/edayot/ItemIO">edayot/ItemIO</a>&gt;`_ when making custom containers.</p></li>
+<li><p>🔔 Events such as new items detection with <cite>``Common Signals`</cite> &lt;<a class="github reference external" href="https://github.com/Stoupy51/CommonSignals">Stoupy51/CommonSignals</a>&gt;`_.</p></li>
+</ul>
+</li>
+<li><p>🌐 External datapack libraries support, see configuration for more information.</p></li>
+<li><p>🔗 Merging datapacks and resource packs with libraries using <a class="reference external" href="https://weld.smithed.dev/">Smithed Weld</a>.</p></li>
+<li><p>🧩 Automatic recognition of custom blocks patterns depending on the texture names in the <code class="docutils literal notranslate"><span class="pre">assets/textures</span></code> folder. For instance, if you have a top, side, and bottom texture, the block will be automatically recognized as a cube with the top, side, and bottom textures.</p></li>
+<li><p>📏 Follow the datapack conventions such as <a class="reference external" href="https://github.com/LanternMC/load">LanternLoad</a>, <a class="reference external" href="https://mcdatapack.vercel.app/">CustomModelData prefix</a>, <a class="reference external" href="https://wiki.smithed.dev/conventions/tag-specification/">tag specification</a>, and <a class="reference external" href="https://wiki.smithed.dev/conventions/namespacing/">namespacing</a>.</p></li>
+<li><p>🧰 Ability to merge a model with the autogenerated one or override it.</p></li>
+<li><p>🔀 <code class="docutils literal notranslate"><span class="pre">merge</span></code> folder providing a way to merge custom files with the autogenerated ones or add custom files to the datapack.</p></li>
+<li><p>⚙️ Automatic special compatibilities with datapacks such as <cite>``SimpleDrawer’s compacted drawer`</cite> &lt;<a class="reference external" href="https://edayot.github.io/SimpleDrawer/material.html">https://edayot.github.io/SimpleDrawer/material.html</a>&gt;`_, <cite>``SimplEnergy’s pulverizer`</cite> &lt;./build/datapack/data/your_namespace/function/calls/simplenergy/pulverizer_recipes.mcfunction&gt;`_.</p></li>
+<li><p>📂 Automatic copy of generated zip files to configured folders.</p></li>
+</ul>
+</section>
+<section id="how-to-use-beginner-friendly">
+<h2>📦 How to use (beginner friendly)<a class="headerlink" href="#how-to-use-beginner-friendly" title="Link to this heading">#</a></h2>
+<p>In order to use <code class="docutils literal notranslate"><span class="pre">StewBeet</span></code>, you need to have at least <a class="reference external" href="https://www.python.org/downloads/">Python 3.12</a> 🐍 or higher installed on your computer with pip!<span class="raw-html-m2r"><br></span>
+Then, you can open a terminal 💻 and run the following command to install the python package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will install the latest version of the framework</span>
+<span class="c1"># (including beet, bolt, mecha, and other dependencies)</span>
+pip<span class="w"> </span>install<span class="w"> </span>stewbeet
+</pre></div>
+</div>
+<p>Next, there are a few templates available in the <cite>`</cite>./templates`` &lt;./templates/&gt;`_ folder 📁,<span class="raw-html-m2r"><br></span>
+There are 3 templates available, feel free to choose the one you prefer (but I highly recommend the basic template):</p>
+<ul class="simple">
+<li><p>🔹 <cite>``minimal template`</cite> &lt;./templates/minimal_template.zip&gt;`_: A very minimal template using only one <code class="docutils literal notranslate"><span class="pre">stewbeet</span></code> plugin.</p></li>
+<li><p>⭐ <cite>``basic template`</cite> &lt;./templates/basic_template.zip&gt;`_: A template with complete configuration but no coded features.</p></li>
+<li><p>🌟 <cite>``extensive template`</cite> &lt;./templates/extensive_template.zip&gt;`_: A template with all the features of the framework, including all the plugins.</p></li>
+</ul>
+<p>The clickable links are zip files 📦, but you can check the content of the templates in the <cite>`</cite>./templates`` &lt;./templates/&gt;`_ folder.<span class="raw-html-m2r"><br></span></p>
+<p>Once you have a template, you can modify the <code class="docutils literal notranslate"><span class="pre">beet.yml</span></code> configuration file ⚙️ to suit your needs.<span class="raw-html-m2r"><br></span>
+Finally, you can run the following command to build the project 🔨:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># You can also run &#39;beet&#39; instead of &#39;stewbeet&#39; but with less functionality</span>
+<span class="c1"># (Make sure you are in the project folder)</span>
+stewbeet
+</pre></div>
+</div>
+<p>The command will generate a datapack and a resource pack in your <code class="docutils literal notranslate"><span class="pre">build</span></code> folder 🏗️.<span class="raw-html-m2r"><br></span>
+And that’s it! 🎉 That is this easy use the package.<span class="raw-html-m2r"><br></span>
+Since this template is using all the features of the package, you can remove the parts you don’t need! 🧹</p>
+</section>
+<section id="how-to-use-beet-users">
+<h2>🌱 How to use (Beet users)<a class="headerlink" href="#how-to-use-beet-users" title="Link to this heading">#</a></h2>
+<p>If you are already familiar with the <a class="reference external" href="https://github.com/mcbeet/beet">Beet</a> development kit, <code class="docutils literal notranslate"><span class="pre">StewBeet</span></code> is developped as a bunch of plugins for it.<span class="raw-html-m2r"><br></span>
+Install <code class="docutils literal notranslate"><span class="pre">StewBeet</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">stewbeet</span></code> and check the <a class="reference external" href="./docs/plugins/README.md">StewBeet plugins documentation</a> to learn about them.</p>
+</section>
+<section id="documentation">
+<h2>📚 Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h2>
+<p>There are a lot of features in the package, you could check the <a class="reference external" href="./templates/extensive/">extensive template</a> to see how to use them.<span class="raw-html-m2r"><br></span>
+Alternatively, you could join the <a class="reference external" href="https://discord.gg/anxzu6rA9F">Discord server</a> to ask questions and get help from the community!<span class="raw-html-m2r"><br></span>
+Or, you could check the <strong>highly detailed</strong> <a class="reference external" href="docs/">documentation folder</a><span class="raw-html-m2r"><br></span>
+Here a list of all the currently available guides:</p>
+<ul class="simple">
+<li><p>📖 <a class="reference external" href="docs/0_getting_started/README.md">Getting started</a></p></li>
+<li><p>🌱 <a class="reference external" href="docs/plugins/README.md">Beet Plugins</a></p></li>
+<li><p>📁 <a class="reference external" href="docs/1_project_structure.md">Project structure</a></p></li>
+<li><p>🗄️ <a class="reference external" href="docs/2_definitions_setup.md">Database setup</a></p></li>
+<li><p>✍️ <a class="reference external" href="docs/3_writing_to_files.md">Writing to files</a></p></li>
+<li><p>🔗 <a class="reference external" href="docs/4_external_dependencies.md">External dependencies</a></p></li>
+<li><p>🔧 <a class="reference external" href="docs/5_miscellaneous.md">Miscellaneous</a></p></li>
+<li><p>🔄 <a class="reference external" href="docs/6_migration_guide.md">Migration guide</a></p></li>
+<li><p>🚀 <a class="reference external" href="docs/7_continuous_delivery.md">Continuous delivery</a></p></li>
+<li><p>⚔️ <a class="reference external" href="docs/specific_guides/adding_a_sword.md">Adding a sword</a></p></li>
+<li><p>More soon!</p></li>
+</ul>
+</section>
+<section id="contribute">
+<h2>🤝 Contribute<a class="headerlink" href="#contribute" title="Link to this heading">#</a></h2>
+<p>Want to help improve StewBeet? 🔍<span class="raw-html-m2r"><br></span>
+Here’s how you can contribute:</p>
+<ul class="simple">
+<li><p>🐛 <strong>Report Bugs</strong>: Found a bug? Open an issue on GitHub describing what happened and how to reproduce it.</p></li>
+<li><p>✨ <strong>Suggest Features</strong>: Have an idea for a new feature? Share it in the issues section!</p></li>
+<li><p>🔧 <strong>Submit Pull Requests</strong>: Feel free to fix bugs or add new features by submitting pull requests.</p></li>
+<li><p>📚 <strong>Improve Documentation</strong>: Help make our docs better by fixing errors or adding examples.</p></li>
+<li><p>💬 <strong>Help Others</strong>: Join our <a class="reference external" href="https://discord.gg/anxzu6rA9F">Discord server</a> and help other users with their questions.</p></li>
+</ul>
+<p>Every contribution matters, no matter how small! 🙌</p>
+</section>
+<section id="what-projects-use-stewbeet">
+<h2>📜 What projects use StewBeet?<a class="headerlink" href="#what-projects-use-stewbeet" title="Link to this heading">#</a></h2>
+<p>To search for projects that use the framework, I search like <a class="reference external" href="https://github.com/search?q=%22%5C%22stewbeet.plugins.%22&amp;type=code">this.</a><span class="raw-html-m2r"><br></span>
+Here is a list of projects that use it:<span class="raw-html-m2r"><br></span></p>
+<ul class="simple">
+<li><p>Actual projects:</p>
+<ul>
+<li><p>Your next project here!</p></li>
+<li><p><a class="github reference external" href="https://github.com/e-psi-lon/Armored-Elytra">e-psi-lon/Armored-Elytra</a> (Python Datapack: before Stewbeet was a thing)</p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/SimplEnergy">Stoupy51/SimplEnergy</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/ImagineYourCraftDatapack">Stoupy51/ImagineYourCraftDatapack</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/LifeSteal">Stoupy51/LifeSteal</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/Survisland">Stoupy51/Survisland</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/SmithedSummit">Stoupy51/SmithedSummit</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/SheepWars">Stoupy51/SheepWars</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/MoreApples">Stoupy51/MoreApples</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/CauldronConcretePowder">Stoupy51/CauldronConcretePowder</a></p></li>
+</ul>
+</li>
+<li><p>Libraries or tools:</p>
+<ul>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/SmartOreGeneration">Stoupy51/SmartOreGeneration</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/Stoupy51/CommonSignals">Stoupy51/CommonSignals</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="star-history">
+<h2>⭐ Star History<a class="headerlink" href="#star-history" title="Link to this heading">#</a></h2>
+<html>
+  <a href="https://star-history.com/#Stoupy51/StewBeet&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Stoupy51/StewBeet&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Stoupy51/StewBeet&type=Date" />
+      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Stoupy51/StewBeet&type=Date" />
+    </picture>
+  </a>
+</html></section>
+<section id="module-documentation">
+<h2>📖 Module Documentation<a class="headerlink" href="#module-documentation" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/stewbeet.html">stewbeet package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/stewbeet.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/stewbeet.continuous_delivery.html">stewbeet.continuous_delivery package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/stewbeet.continuous_delivery.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.continuous_delivery.cd_utils.html">stewbeet.continuous_delivery.cd_utils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.continuous_delivery.github.html">stewbeet.continuous_delivery.github module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.continuous_delivery.modrinth.html">stewbeet.continuous_delivery.modrinth module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.continuous_delivery.pmc.html">stewbeet.continuous_delivery.pmc module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.continuous_delivery.smithed.html">stewbeet.continuous_delivery.smithed module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modules/stewbeet.core.html">stewbeet.core package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/stewbeet.core.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.html">stewbeet.core.definitions_helper package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.completion.html">stewbeet.core.definitions_helper.completion module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.completion.html#stewbeet.core.definitions_helper.completion.add_item_model_component"><code class="docutils literal notranslate"><span class="pre">add_item_model_component()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.completion.html#stewbeet.core.definitions_helper.completion.add_item_name_and_lore_if_missing"><code class="docutils literal notranslate"><span class="pre">add_item_name_and_lore_if_missing()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.completion.html#stewbeet.core.definitions_helper.completion.add_private_custom_data_for_namespace"><code class="docutils literal notranslate"><span class="pre">add_private_custom_data_for_namespace()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.completion.html#stewbeet.core.definitions_helper.completion.add_smithed_ignore_vanilla_behaviours_convention"><code class="docutils literal notranslate"><span class="pre">add_smithed_ignore_vanilla_behaviours_convention()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html">stewbeet.core.definitions_helper.equipments module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments</span></code></a><ul>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.HELMET"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.HELMET</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.CHESTPLATE"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.CHESTPLATE</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.LEGGINGS"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.LEGGINGS</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.BOOTS"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.BOOTS</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.SWORD"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.SWORD</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.PICKAXE"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.PICKAXE</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.AXE"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.AXE</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.SHOVEL"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.SHOVEL</span></code></a></li>
+<li class="toctree-l9"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.VanillaEquipments.HOE"><code class="docutils literal notranslate"><span class="pre">VanillaEquipments.HOE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.equipments.html#stewbeet.core.definitions_helper.equipments.format_attributes"><code class="docutils literal notranslate"><span class="pre">format_attributes()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.materials.html">stewbeet.core.definitions_helper.materials module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.materials.html#stewbeet.core.definitions_helper.materials.generate_everything_about_this_material"><code class="docutils literal notranslate"><span class="pre">generate_everything_about_this_material()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.materials.html#stewbeet.core.definitions_helper.materials.generate_everything_about_these_materials"><code class="docutils literal notranslate"><span class="pre">generate_everything_about_these_materials()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.materials.html#stewbeet.core.definitions_helper.materials.add_recipes_for_dust"><code class="docutils literal notranslate"><span class="pre">add_recipes_for_dust()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.materials.html#stewbeet.core.definitions_helper.materials.add_recipes_for_all_dusts"><code class="docutils literal notranslate"><span class="pre">add_recipes_for_all_dusts()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.records.html">stewbeet.core.definitions_helper.records module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.records.html#stewbeet.core.definitions_helper.records.clean_record_name"><code class="docutils literal notranslate"><span class="pre">clean_record_name()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.records.html#stewbeet.core.definitions_helper.records.generate_custom_records"><code class="docutils literal notranslate"><span class="pre">generate_custom_records()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.smart_ore_generation.html">stewbeet.core.definitions_helper.smart_ore_generation module</a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.text.html">stewbeet.core.definitions_helper.text module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.text.html#stewbeet.core.definitions_helper.text.create_gradient_text"><code class="docutils literal notranslate"><span class="pre">create_gradient_text()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.definitions_helper.text.html#stewbeet.core.definitions_helper.text.gradient_text_to_string"><code class="docutils literal notranslate"><span class="pre">gradient_text_to_string()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.core.utils.html">stewbeet.core.utils namespace</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.utils.html#submodules">Submodules</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.utils.io.html">stewbeet.core.utils.io module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.write_function_tag"><code class="docutils literal notranslate"><span class="pre">write_function_tag()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.read_function"><code class="docutils literal notranslate"><span class="pre">read_function()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.write_function"><code class="docutils literal notranslate"><span class="pre">write_function()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.write_load_file"><code class="docutils literal notranslate"><span class="pre">write_load_file()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.write_tick_file"><code class="docutils literal notranslate"><span class="pre">write_tick_file()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.write_versioned_function"><code class="docutils literal notranslate"><span class="pre">write_versioned_function()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.io.html#stewbeet.core.utils.io.super_merge_dict"><code class="docutils literal notranslate"><span class="pre">super_merge_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.utils.sounds.html">stewbeet.core.utils.sounds module</a><ul>
+<li class="toctree-l8"><a class="reference internal" href="modules/stewbeet.core.utils.sounds.html#stewbeet.core.utils.sounds.add_sound"><code class="docutils literal notranslate"><span class="pre">add_sound()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="modules/stewbeet.core.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.core.__memory__.html">stewbeet.core.__memory__ module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.core.constants.html">stewbeet.core.constants module</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions"><code class="docutils literal notranslate"><span class="pre">Conventions</span></code></a><ul>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.NO_KILL_TAGS"><code class="docutils literal notranslate"><span class="pre">Conventions.NO_KILL_TAGS</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.ENTITY_TAGS"><code class="docutils literal notranslate"><span class="pre">Conventions.ENTITY_TAGS</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.BLOCK_TAGS"><code class="docutils literal notranslate"><span class="pre">Conventions.BLOCK_TAGS</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.ENTITY_TAGS_NO_KILL"><code class="docutils literal notranslate"><span class="pre">Conventions.ENTITY_TAGS_NO_KILL</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.BLOCK_TAGS_NO_KILL"><code class="docutils literal notranslate"><span class="pre">Conventions.BLOCK_TAGS_NO_KILL</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.AVOID_NO_KILL"><code class="docutils literal notranslate"><span class="pre">Conventions.AVOID_NO_KILL</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.AVOID_ENTITY_TAGS"><code class="docutils literal notranslate"><span class="pre">Conventions.AVOID_ENTITY_TAGS</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.AVOID_BLOCK_TAGS"><code class="docutils literal notranslate"><span class="pre">Conventions.AVOID_BLOCK_TAGS</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.AVOID_ENTITY_TAGS_NO_KILL"><code class="docutils literal notranslate"><span class="pre">Conventions.AVOID_ENTITY_TAGS_NO_KILL</span></code></a></li>
+<li class="toctree-l7"><a class="reference internal" href="modules/stewbeet.core.constants.html#stewbeet.core.constants.Conventions.AVOID_BLOCK_TAGS_NO_KILL"><code class="docutils literal notranslate"><span class="pre">Conventions.AVOID_BLOCK_TAGS_NO_KILL</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.core.ingredients.html">stewbeet.core.ingredients module</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.ingredients.html#stewbeet.core.ingredients.ingr_repr"><code class="docutils literal notranslate"><span class="pre">ingr_repr()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.ingredients.html#stewbeet.core.ingredients.item_to_id_ingr_repr"><code class="docutils literal notranslate"><span class="pre">item_to_id_ingr_repr()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.ingredients.html#stewbeet.core.ingredients.ingr_to_id"><code class="docutils literal notranslate"><span class="pre">ingr_to_id()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.ingredients.html#stewbeet.core.ingredients.get_vanilla_item_id_from_ingredient"><code class="docutils literal notranslate"><span class="pre">get_vanilla_item_id_from_ingredient()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.ingredients.html#stewbeet.core.ingredients.get_item_from_ingredient"><code class="docutils literal notranslate"><span class="pre">get_item_from_ingredient()</span></code></a></li>
+<li class="toctree-l6"><a class="reference internal" href="modules/stewbeet.core.ingredients.html#stewbeet.core.ingredients.get_ingredients_from_recipe"><code class="docutils literal notranslate"><span class="pre">get_ingredients_from_recipe()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="modules/stewbeet.dependencies.html">stewbeet.dependencies package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="modules/stewbeet.dependencies.html#submodules">Submodules</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="modules/stewbeet.dependencies.bookshelf.html">stewbeet.dependencies.bookshelf module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/stewbeet.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/stewbeet.__main__.html">stewbeet.__main__ module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules/stewbeet.cli.html">stewbeet.cli module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="modules/stewbeet.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">stewbeet package</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-stewbeet">❓ What is <code class="docutils literal notranslate"><span class="pre">StewBeet</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-beginner-friendly">📦 How to use (beginner friendly)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-beet-users">🌱 How to use (Beet users)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">📚 Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contribute">🤝 Contribute</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-projects-use-stewbeet">📜 What projects use StewBeet?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#star-history">⭐ Star History</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-documentation">📖 Module Documentation</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Stoupy.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stewbeet.plugins.finalyze.dependencies &#8212; StewBeet</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../../../_static/documentation_options.js?v=6d4b8ac6"></script>
+    <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/stewbeet/plugins/finalyze/dependencies';</script>
+    <link rel="icon" href="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png" class="logo__image only-dark" alt="StewBeet - Home"/>
+    <img src="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png" class="logo__image only-light pst-js-only" alt="StewBeet - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../modules/stewbeet.html">
+    stewbeet package
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../modules/stewbeet.html">
+    stewbeet package
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">stewbeet.plugins.finalyze.dependencies</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for stewbeet.plugins.finalyze.dependencies</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># Imports</span>
+<span class="kn">from</span> <span class="nn">beet</span> <span class="kn">import</span> <span class="n">Context</span>
+<span class="kn">from</span> <span class="nn">beet.core.utils</span> <span class="kn">import</span> <span class="n">JsonDict</span>
+<span class="kn">from</span> <span class="nn">stouputils.decorators</span> <span class="kn">import</span> <span class="n">measure_time</span>
+<span class="kn">from</span> <span class="nn">stouputils.print</span> <span class="kn">import</span> <span class="n">debug</span><span class="p">,</span> <span class="n">info</span><span class="p">,</span> <span class="n">progress</span>
+
+<span class="kn">from</span> <span class="nn">....core.__memory__</span> <span class="kn">import</span> <span class="n">Mem</span>
+<span class="kn">from</span> <span class="nn">....core.constants</span> <span class="kn">import</span> <span class="n">BOOKSHELF_MODULES</span><span class="p">,</span> <span class="n">DATA_VERSION</span><span class="p">,</span> <span class="n">MINECRAFT_VERSION</span><span class="p">,</span> <span class="n">OFFICIAL_LIBS</span><span class="p">,</span> <span class="n">official_lib_used</span>
+<span class="kn">from</span> <span class="nn">....core.utils.io</span> <span class="kn">import</span> <span class="n">write_function</span><span class="p">,</span> <span class="n">write_function_tag</span><span class="p">,</span> <span class="n">write_versioned_function</span>
+
+
+<span class="c1"># Utility functions</span>
+<div class="viewcode-block" id="check_version">
+<a class="viewcode-back" href="../../../../modules/stewbeet.plugins.finalyze.dependencies.html#stewbeet.plugins.finalyze.dependencies.check_version">[docs]</a>
+<span class="k">def</span> <span class="nf">check_version</span><span class="p">(</span><span class="n">lib_ns</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">run_command</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot; Check version compatibility for a dependency.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		lib_ns (str): The namespace of the library to check</span>
+<span class="sd">		data (dict): The dependency data containing version info</span>
+<span class="sd">		run_command (str): The command to run if version check fails</span>
+
+<span class="sd">	Returns:</span>
+<span class="sd">		str: The version check commands</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="n">ns</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Mem</span><span class="o">.</span><span class="n">ctx</span><span class="o">.</span><span class="n">project_id</span>
+	<span class="n">checks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+	<span class="n">major</span><span class="p">,</span> <span class="n">minor</span><span class="p">,</span> <span class="n">patch</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;version&quot;</span><span class="p">]</span>
+	<span class="n">score_major</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;score #</span><span class="si">{</span><span class="n">lib_ns</span><span class="si">}</span><span class="s2">.major load.status matches </span><span class="si">{</span><span class="n">major</span><span class="si">}</span><span class="s2">&quot;</span>
+	<span class="n">score_minor</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;score #</span><span class="si">{</span><span class="n">lib_ns</span><span class="si">}</span><span class="s2">.minor load.status matches </span><span class="si">{</span><span class="n">minor</span><span class="si">}</span><span class="s2">&quot;</span>
+	<span class="n">score_patch</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;score #</span><span class="si">{</span><span class="n">lib_ns</span><span class="si">}</span><span class="s2">.patch load.status matches </span><span class="si">{</span><span class="n">patch</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">if</span> <span class="n">patch</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+
+	<span class="c1"># If bookshelf, replace #bs by $bs</span>
+	<span class="k">if</span> <span class="n">lib_ns</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;bs.&quot;</span><span class="p">):</span>
+		<span class="n">score_major</span> <span class="o">=</span> <span class="n">score_major</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">)</span>
+		<span class="n">score_minor</span> <span class="o">=</span> <span class="n">score_minor</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">)</span>
+		<span class="n">score_patch</span> <span class="o">=</span> <span class="n">score_patch</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">,</span> <span class="s2">&quot;$&quot;</span><span class="p">)</span>
+
+	<span class="c1"># Check if the version is correct</span>
+	<span class="n">is_decoder</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="s2">&quot;tellraw @&quot;</span> <span class="ow">in</span> <span class="n">run_command</span> <span class="k">else</span> <span class="mi">0</span>
+	<span class="n">checks</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;execute if score #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches </span><span class="si">{</span><span class="n">is_decoder</span><span class="si">}</span><span class="s2"> unless </span><span class="si">{</span><span class="n">score_major</span><span class="si">}</span><span class="s2">.. run </span><span class="si">{</span><span class="n">run_command</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+	<span class="n">checks</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;execute if score #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches </span><span class="si">{</span><span class="n">is_decoder</span><span class="si">}</span><span class="s2"> if </span><span class="si">{</span><span class="n">score_major</span><span class="si">}</span><span class="s2"> unless </span><span class="si">{</span><span class="n">score_minor</span><span class="si">}</span><span class="s2">.. run </span><span class="si">{</span><span class="n">run_command</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+	<span class="k">if</span> <span class="n">score_patch</span><span class="p">:</span>
+		<span class="n">checks</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;execute if score #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches </span><span class="si">{</span><span class="n">is_decoder</span><span class="si">}</span><span class="s2"> if </span><span class="si">{</span><span class="n">score_major</span><span class="si">}</span><span class="s2"> if </span><span class="si">{</span><span class="n">score_minor</span><span class="si">}</span><span class="s2"> unless </span><span class="si">{</span><span class="n">score_patch</span><span class="si">}</span><span class="s2">.. run </span><span class="si">{</span><span class="n">run_command</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+	<span class="k">return</span> <span class="n">checks</span></div>
+
+
+
+<span class="c1"># Main entry point</span>
+<div class="viewcode-block" id="beet_default">
+<a class="viewcode-back" href="../../../../modules/stewbeet.plugins.finalyze.dependencies.html#stewbeet.plugins.finalyze.dependencies.beet_default">[docs]</a>
+<span class="nd">@measure_time</span><span class="p">(</span><span class="n">progress</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Execution time of &#39;stewbeet.plugins.finalyze.dependencies&#39;&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">beet_default</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot;Main entry point for the dependencies plugin.</span>
+<span class="sd">	This plugin handles dependency management, version checking, and load sequence setup.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		ctx (Context): The beet context.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="k">if</span> <span class="n">Mem</span><span class="o">.</span><span class="n">ctx</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">Mem</span><span class="o">.</span><span class="n">ctx</span> <span class="o">=</span> <span class="n">ctx</span>
+
+	<span class="c1"># Get namespace and version</span>
+	<span class="k">assert</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_id</span><span class="p">,</span> <span class="s2">&quot;Project ID is not set. Please set it in the project configuration.&quot;</span>
+	<span class="k">assert</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_version</span><span class="p">,</span> <span class="s2">&quot;Project version is not set. Please set it in the project configuration.&quot;</span>
+	<span class="k">assert</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_name</span><span class="p">,</span> <span class="s2">&quot;Project name is not set. Please set it in the project configuration.&quot;</span>
+	<span class="k">assert</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_author</span><span class="p">,</span> <span class="s2">&quot;Project author is not set. Please set it in the project configuration.&quot;</span>
+	<span class="n">ns</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_id</span>
+	<span class="n">version</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_version</span>
+	<span class="n">major</span><span class="p">,</span> <span class="n">minor</span><span class="p">,</span> <span class="n">patch</span> <span class="o">=</span> <span class="n">version</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+	<span class="n">project_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_name</span>
+	<span class="n">author</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_author</span>
+
+	<span class="c1"># Find if furnace_nbt_recipes is used</span>
+	<span class="k">if</span> <span class="n">ns</span> <span class="o">!=</span> <span class="s2">&quot;furnace_nbt_recipes&quot;</span><span class="p">:</span>
+		<span class="k">for</span> <span class="n">function</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+			<span class="k">if</span> <span class="s2">&quot;furnace_nbt_recipes&quot;</span> <span class="ow">in</span> <span class="n">function</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+				<span class="k">if</span> <span class="ow">not</span> <span class="n">official_lib_used</span><span class="p">(</span><span class="s2">&quot;furnace_nbt_recipes&quot;</span><span class="p">):</span>
+					<span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Found the use of official supported library &#39;furnace_nbt_recipes&#39;, adding it to the datapack&quot;</span><span class="p">)</span>
+				<span class="k">break</span>
+
+	<span class="c1"># Find if common_signals is used</span>
+	<span class="k">if</span> <span class="n">ns</span> <span class="o">!=</span> <span class="s2">&quot;common_signals&quot;</span><span class="p">:</span>
+		<span class="k">for</span> <span class="n">function</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+			<span class="k">if</span> <span class="s2">&quot;common_signals&quot;</span> <span class="ow">in</span> <span class="n">function</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+				<span class="k">if</span> <span class="ow">not</span> <span class="n">official_lib_used</span><span class="p">(</span><span class="s2">&quot;common_signals&quot;</span><span class="p">):</span>
+					<span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Found the use of official supported library &#39;common_signals&#39;, adding it to the datapack&quot;</span><span class="p">)</span>
+				<span class="k">break</span>
+
+	<span class="c1"># Find if itemio is used</span>
+	<span class="k">if</span> <span class="n">ns</span> <span class="o">!=</span> <span class="s2">&quot;itemio&quot;</span><span class="p">:</span>
+		<span class="k">for</span> <span class="n">function</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+			<span class="k">if</span> <span class="s2">&quot;itemio&quot;</span> <span class="ow">in</span> <span class="n">function</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+				<span class="k">if</span> <span class="ow">not</span> <span class="n">official_lib_used</span><span class="p">(</span><span class="s2">&quot;itemio&quot;</span><span class="p">):</span>
+					<span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Found the use of official supported library &#39;itemio&#39;, adding it to the datapack&quot;</span><span class="p">)</span>
+				<span class="k">break</span>
+
+	<span class="c1"># Find for each bookshelf module if it is used</span>
+	<span class="k">if</span> <span class="n">ns</span> <span class="o">!=</span> <span class="s2">&quot;bookshelf&quot;</span><span class="p">:</span>
+		<span class="k">for</span> <span class="n">module_ns</span> <span class="ow">in</span> <span class="n">BOOKSHELF_MODULES</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+			<span class="k">for</span> <span class="n">function</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">functions</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+				<span class="k">if</span> <span class="sa">f</span><span class="s2">&quot;#</span><span class="si">{</span><span class="n">module_ns</span><span class="si">}</span><span class="s2">:&quot;</span> <span class="ow">in</span> <span class="n">function</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+					<span class="k">if</span> <span class="ow">not</span> <span class="n">official_lib_used</span><span class="p">(</span><span class="n">module_ns</span><span class="p">):</span>
+						<span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found the use of official supported library &#39;</span><span class="si">{</span><span class="n">module_ns</span><span class="si">}</span><span class="s2">&#39;, adding it to the datapack&quot;</span><span class="p">)</span>
+					<span class="k">break</span>
+
+	<span class="c1"># Get all dependencies (official and custom)</span>
+	<span class="n">dependencies</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[(</span><span class="n">lib_ns</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span> <span class="k">for</span> <span class="n">lib_ns</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">OFFICIAL_LIBS</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;is_used&quot;</span><span class="p">]]</span>
+	<span class="n">load_dependencies</span><span class="p">:</span> <span class="n">JsonDict</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;load_dependencies&quot;</span><span class="p">,</span> <span class="p">{})</span>
+	<span class="k">if</span> <span class="n">load_dependencies</span><span class="p">:</span>
+		<span class="n">dependencies</span> <span class="o">+=</span> <span class="nb">list</span><span class="p">(</span><span class="n">load_dependencies</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+	<span class="c1"># Setup Lantern Load</span>
+	<span class="n">write_function_tag</span><span class="p">(</span><span class="s2">&quot;minecraft:load&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;#load:_private/load&quot;</span><span class="p">])</span>
+	<span class="n">write_function_tag</span><span class="p">(</span><span class="s2">&quot;load:_private/init&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;load:_private/init&quot;</span><span class="p">])</span>
+	<span class="n">write_function_tag</span><span class="p">(</span><span class="s2">&quot;load:_private/load&quot;</span><span class="p">,</span> <span class="p">[</span>
+		<span class="s2">&quot;#load:_private/init&quot;</span><span class="p">,</span>
+		<span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;#load:pre_load&quot;</span><span class="p">,</span> <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+		<span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;#load:load&quot;</span><span class="p">,</span> <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
+		<span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;#load:post_load&quot;</span><span class="p">,</span> <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+	<span class="p">])</span>
+
+	<span class="n">write_function</span><span class="p">(</span><span class="s2">&quot;load:_private/init&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2"># Reset scoreboards so packs can set values accurate for current load.</span>
+<span class="s2">scoreboard objectives add load.status dummy</span>
+<span class="s2">scoreboard players reset * load.status</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+	<span class="c1"># Setup load json files</span>
+	<span class="n">write_function_tag</span><span class="p">(</span><span class="s2">&quot;load:load&quot;</span><span class="p">,</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;#</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:load&quot;</span><span class="p">])</span>
+	<span class="n">values</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span> <span class="o">|</span> <span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;#</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:enumerate&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;#</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:resolve&quot;</span><span class="p">]</span>
+	<span class="k">if</span> <span class="n">dependencies</span><span class="p">:</span>
+		<span class="n">write_function_tag</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:enumerate&quot;</span><span class="p">,</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;#</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:dependencies&quot;</span><span class="p">],</span> <span class="n">prepend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+	<span class="n">write_function_tag</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:load&quot;</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+
+	<span class="k">if</span> <span class="n">dependencies</span><span class="p">:</span>
+		<span class="n">calls</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+			<span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;#</span><span class="si">{</span><span class="n">dep_ns</span><span class="si">}</span><span class="s2">:load&quot;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">dep_ns</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;bs.&quot;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;#bs.load:load&quot;</span><span class="p">,</span> <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+			<span class="k">for</span> <span class="n">dep_ns</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">dependencies</span>
+		<span class="p">]</span>
+		<span class="c1"># Remove duplicates while preserving order</span>
+		<span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+		<span class="n">unique_calls</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="k">for</span> <span class="n">call</span> <span class="ow">in</span> <span class="n">calls</span><span class="p">:</span>
+			<span class="n">call_id</span> <span class="o">=</span> <span class="n">call</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span>
+			<span class="k">if</span> <span class="n">call_id</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+				<span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">call_id</span><span class="p">)</span>
+				<span class="n">unique_calls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">call</span><span class="p">)</span>
+
+		<span class="n">write_function_tag</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:dependencies&quot;</span><span class="p">,</span> <span class="n">unique_calls</span><span class="p">)</span>
+
+	<span class="c1"># Write secondary function</span>
+	<span class="n">authors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">author</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+	<span class="n">convention_debug</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;tag </span><span class="si">{</span><span class="n">author</span><span class="si">}</span><span class="s2"> add convention.debug</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">authors</span><span class="p">])</span>
+
+	<span class="n">content</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2"># </span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span>
+<span class="s2">scoreboard objectives add </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data dummy</span>
+<span class="si">{</span><span class="n">convention_debug</span><span class="si">}</span><span class="s2">&quot;&quot;&quot;</span>
+
+	<span class="k">if</span> <span class="n">dependencies</span><span class="p">:</span>
+		<span class="n">content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2"># Check dependencies and wait for a player to connect (to get server version)</span>
+<span class="s2">function </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/load/check_dependencies</span>
+<span class="s2">function </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/load/valid_dependencies</span>
+<span class="s2">&quot;&quot;&quot;</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2"># Confirm load</span>
+<span class="s2">function </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/load/confirm_load</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+	<span class="n">write_versioned_function</span><span class="p">(</span><span class="s2">&quot;load/secondary&quot;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+
+	<span class="c1"># Tick verification</span>
+	<span class="n">tick_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/tick&quot;</span>
+	<span class="k">if</span> <span class="n">tick_path</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">functions</span><span class="p">:</span>
+		<span class="n">write_function_tag</span><span class="p">(</span><span class="s2">&quot;minecraft:tick&quot;</span><span class="p">,</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/load/tick_verification&quot;</span><span class="p">])</span>
+		<span class="n">write_versioned_function</span><span class="p">(</span><span class="s2">&quot;load/tick_verification&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">execute if score #</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.major load.status matches </span><span class="si">{</span><span class="n">major</span><span class="si">}</span><span class="s2"> if score #</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.minor load.status matches </span><span class="si">{</span><span class="n">minor</span><span class="si">}</span><span class="s2"> if score #</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.patch load.status matches </span><span class="si">{</span><span class="n">patch</span><span class="si">}</span><span class="s2"> run function </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/tick</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+	<span class="c1"># Link smart_ore_generation library functions</span>
+	<span class="k">if</span> <span class="n">OFFICIAL_LIBS</span><span class="p">[</span><span class="s2">&quot;smart_ore_generation&quot;</span><span class="p">][</span><span class="s2">&quot;is_used&quot;</span><span class="p">]:</span>
+		<span class="k">for</span> <span class="n">function_tag</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;denied_dimensions&quot;</span><span class="p">,</span> <span class="s2">&quot;generate_ores&quot;</span><span class="p">,</span> <span class="s2">&quot;post_generation&quot;</span><span class="p">]:</span>
+			<span class="n">function_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:calls/smart_ore_generation/</span><span class="si">{</span><span class="n">function_tag</span><span class="si">}</span><span class="s2">&quot;</span>
+			<span class="k">if</span> <span class="n">function_path</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">functions</span><span class="p">:</span>
+				<span class="n">write_function_tag</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;smart_ore_generation:v1/signals/</span><span class="si">{</span><span class="n">function_tag</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">function_path</span><span class="p">])</span>
+
+	<span class="c1"># For each used library, show message</span>
+	<span class="n">used_libs</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">OFFICIAL_LIBS</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;is_used&quot;</span><span class="p">]]</span>
+	<span class="k">if</span> <span class="n">used_libs</span><span class="p">:</span>
+		<span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Summary of the official supported libraries used in the datapack: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">used_libs</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+	<span class="c1"># Write check_dependencies and valid_dependencies functions now that we have all the dependencies</span>
+	<span class="k">if</span> <span class="n">dependencies</span><span class="p">:</span>
+		<span class="n">encoder_checks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+		<span class="n">decoder_checks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+		<span class="k">for</span> <span class="n">lib_ns</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">dependencies</span><span class="p">:</span>
+			<span class="c1"># Encoder check</span>
+			<span class="n">encoder_command</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;scoreboard players set #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data 1&quot;</span>
+			<span class="n">encoder_checks</span> <span class="o">+=</span> <span class="n">check_version</span><span class="p">(</span><span class="n">lib_ns</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">encoder_command</span><span class="p">)</span>
+
+			<span class="c1"># Decoder check</span>
+			<span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]</span>
+			<span class="n">url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]</span>
+			<span class="n">lib_version</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;.&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">[</span><span class="s2">&quot;version&quot;</span><span class="p">]))</span>
+			<span class="n">decoder_command</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;tellraw @a </span><span class="se">{{</span><span class="s1">&quot;text&quot;:&quot;- [</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> (v</span><span class="si">{</span><span class="n">lib_version</span><span class="si">}</span><span class="s1">+)]&quot;,&quot;color&quot;:&quot;gold&quot;,&quot;clickEvent&quot;:</span><span class="se">{{</span><span class="s1">&quot;action&quot;:&quot;open_url&quot;,&quot;value&quot;:&quot;</span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1">&quot;</span><span class="se">}}}}</span><span class="s1">&#39;</span>
+			<span class="n">decoder_checks</span> <span class="o">+=</span> <span class="n">check_version</span><span class="p">(</span><span class="n">lib_ns</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">decoder_command</span><span class="p">)</span>
+
+		<span class="c1"># Write check_dependencies.mcfunction</span>
+		<span class="n">write_versioned_function</span><span class="p">(</span><span class="s2">&quot;load/check_dependencies&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">## Check if </span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s2"> is loadable (dependencies)</span>
+<span class="s2">scoreboard players set #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data 0</span>
+<span class="si">{</span><span class="n">encoder_checks</span><span class="si">}</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>		<span class="c1"># Write valid_dependencies.mcfunction</span>
+		<span class="n">mc_error_msg</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s1"> Error: This version is made for Minecraft </span><span class="si">{</span><span class="n">MINECRAFT_VERSION</span><span class="si">}</span><span class="s1">+.&quot;&#39;</span>
+		<span class="n">dep_error_msg</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s1"> Error: Libraries are missing</span><span class="se">\\</span><span class="s1">nplease download the right </span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s1"> datapack</span><span class="se">\\</span><span class="s1">nor download each of these libraries one by one:&quot;&#39;</span>
+
+		<span class="n">write_versioned_function</span><span class="p">(</span><span class="s2">&quot;load/valid_dependencies&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;# Waiting for a player to get the game version, but stop function if no player found</span>
+<span class="s2">execute unless entity @p run schedule function </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/load/valid_dependencies 1t replace</span>
+<span class="s2">execute unless entity @p run return 0</span>
+<span class="s2">execute store result score #game_version </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data run data get entity @p DataVersion</span>
+
+<span class="s2"># Check if the game version is supported</span>
+<span class="s2">scoreboard players set #mcload_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data 0</span>
+<span class="s2">execute unless score #game_version </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches </span><span class="si">{</span><span class="n">DATA_VERSION</span><span class="si">}</span><span class="s2">.. run scoreboard players set #mcload_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data 1</span>
+
+<span class="s2"># Decode errors</span>
+<span class="s2">execute if score #mcload_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches 1 run tellraw @a </span><span class="se">{{</span><span class="s2">&quot;text&quot;:</span><span class="si">{</span><span class="n">mc_error_msg</span><span class="si">}</span><span class="s2">,&quot;color&quot;:&quot;red&quot;</span><span class="se">}}</span>
+<span class="s2">execute if score #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches 1 run tellraw @a </span><span class="se">{{</span><span class="s2">&quot;text&quot;:</span><span class="si">{</span><span class="n">dep_error_msg</span><span class="si">}</span><span class="s2">,&quot;color&quot;:&quot;red&quot;</span><span class="se">}}</span>
+<span class="si">{</span><span class="n">decoder_checks</span><span class="si">}</span>
+<span class="s2"># Load </span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span>
+<span class="s2">execute if score #game_version </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches 1.. if score #mcload_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches 0 if score #dependency_error </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">.data matches 0 run function </span><span class="si">{</span><span class="n">ns</span><span class="si">}</span><span class="s2">:v</span><span class="si">{</span><span class="n">version</span><span class="si">}</span><span class="s2">/load/confirm_load</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span></div>
+
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Stoupy.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

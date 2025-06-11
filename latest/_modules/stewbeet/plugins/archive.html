@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" data-theme="dark">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stewbeet.plugins.archive &#8212; StewBeet</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "dark";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../../_static/documentation_options.js?v=6d4b8ac6"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/stewbeet/plugins/archive';</script>
+    <link rel="icon" href="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="dark">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png" class="logo__image only-dark" alt="StewBeet - Home"/>
+    <img src="https://raw.githubusercontent.com/Stoupy51/StewBeet/refs/heads/main/templates/extensive/assets/stewbeet_1024x1024.png" class="logo__image only-light pst-js-only" alt="StewBeet - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../modules/stewbeet.html">
+    stewbeet package
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../modules/stewbeet.html">
+    stewbeet package
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">stewbeet.plugins.archive</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for stewbeet.plugins.archive</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">StewBeet Archive Plugin</span>
+
+<span class="sd">This plugin replaces the legacy `make_archive.py` system with a beet-compatible implementation.</span>
+<span class="sd">Instead of using the old `FILES_TO_WRITE` global dictionary approach, this plugin leverages</span>
+<span class="sd">beet&#39;s native Context and pack management system.</span>
+
+<span class="sd">Key improvements over the legacy system:</span>
+<span class="sd">1. Uses beet&#39;s Context.packs to access generated data and resource packs</span>
+<span class="sd">2. Uses pack.dump() to create zip archives without interfering with existing pack directories</span>
+<span class="sd">3. Integrates with beet&#39;s output directory management</span>
+<span class="sd">4. Provides proper error handling for file operations</span>
+<span class="sd">5. Uses beet cache .gitignore file modification time for consistent, reproducible timestamps</span>
+
+<span class="sd">The plugin automatically:</span>
+<span class="sd">- Detects all generated packs (data pack and resource pack)</span>
+<span class="sd">- Creates zip archives with consistent timestamps based on beet cache .gitignore file</span>
+<span class="sd">- Applies deterministic compression settings for reproducible builds</span>
+<span class="sd">- Saves archives to the configured output directory</span>
+<span class="sd">- Preserves existing pack directory structure</span>
+
+<span class="sd">Timestamp Strategy:</span>
+<span class="sd">The plugin uses the modification time of the `.beet_cache/.gitignore` file to ensure</span>
+<span class="sd">all zip entries have consistent timestamps, making the archives reproducible and</span>
+<span class="sd">deterministic across builds. This approach is more reliable than searching for</span>
+<span class="sd">pack.mcmeta files in the output directory.</span>
+
+<span class="sd">This replaces the legacy make_archive() function calls and integrates seamlessly</span>
+<span class="sd">with beet&#39;s plugin architecture and build pipeline without deleting the original pack folders.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Imports</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">zipfile</span>
+<span class="kn">from</span> <span class="nn">zipfile</span> <span class="kn">import</span> <span class="n">ZipInfo</span>
+
+<span class="kn">from</span> <span class="nn">beet</span> <span class="kn">import</span> <span class="n">Context</span><span class="p">,</span> <span class="n">DataPack</span><span class="p">,</span> <span class="n">ResourcePack</span>
+<span class="kn">from</span> <span class="nn">stouputils.decorators</span> <span class="kn">import</span> <span class="n">handle_error</span><span class="p">,</span> <span class="n">measure_time</span>
+<span class="kn">from</span> <span class="nn">stouputils.parallel</span> <span class="kn">import</span> <span class="n">multithreading</span>
+<span class="kn">from</span> <span class="nn">stouputils.print</span> <span class="kn">import</span> <span class="n">progress</span>
+
+
+<div class="viewcode-block" id="get_consistent_timestamp">
+<a class="viewcode-back" href="../../../modules/stewbeet.plugins.archive.html#stewbeet.plugins.archive.get_consistent_timestamp">[docs]</a>
+<span class="k">def</span> <span class="nf">get_consistent_timestamp</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="o">...</span><span class="p">]:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot; Get a consistent timestamp for archive files based on beet cache .gitignore file modification time. &quot;&quot;&quot;</span>
+	<span class="n">default_time</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2025</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># Default time: 2025-01-01 00:00:00</span>
+
+	<span class="k">try</span><span class="p">:</span>
+		<span class="c1"># Use the beet cache .gitignore file modification time for consistent timestamps</span>
+		<span class="n">cache_directory</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">cache</span><span class="o">.</span><span class="n">directory</span><span class="o">.</span><span class="n">parent</span>
+		<span class="n">default_directory</span> <span class="o">=</span> <span class="n">cache_directory</span> <span class="o">/</span> <span class="s2">&quot;default&quot;</span>
+		<span class="k">if</span> <span class="n">default_directory</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+			<span class="n">time_float</span> <span class="o">=</span> <span class="n">default_directory</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_mtime</span>
+			<span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">(</span><span class="n">time_float</span><span class="p">)[:</span><span class="mi">6</span><span class="p">]</span>
+	<span class="k">except</span> <span class="p">(</span><span class="ne">AttributeError</span><span class="p">,</span> <span class="ne">OSError</span><span class="p">):</span>
+		<span class="c1"># Fall back to default time if gitignore file is not available</span>
+		<span class="k">pass</span>
+
+	<span class="k">return</span> <span class="n">default_time</span></div>
+
+
+
+<span class="c1"># Main entry point</span>
+<div class="viewcode-block" id="beet_default">
+<a class="viewcode-back" href="../../../modules/stewbeet.plugins.archive.html#stewbeet.plugins.archive.beet_default">[docs]</a>
+<span class="nd">@measure_time</span><span class="p">(</span><span class="n">progress</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Execution time of &#39;stewbeet.plugins.archive&#39;&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">beet_default</span><span class="p">(</span><span class="n">ctx</span><span class="p">:</span> <span class="n">Context</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">	</span><span class="sd">&quot;&quot;&quot; Archive plugin for StewBeet.</span>
+<span class="sd">	Creates zip archives of the generated data pack and resource pack using pack.dump() to avoid</span>
+<span class="sd">	interfering with existing pack directories.</span>
+
+<span class="sd">	Args:</span>
+<span class="sd">		ctx (Context): The beet context.</span>
+<span class="sd">	&quot;&quot;&quot;</span>
+	<span class="c1"># Assertions</span>
+	<span class="k">assert</span> <span class="n">ctx</span><span class="o">.</span><span class="n">output_directory</span><span class="p">,</span> <span class="s2">&quot;Output directory must be specified in the project configuration.&quot;</span>
+	<span class="k">assert</span> <span class="n">ctx</span><span class="o">.</span><span class="n">packs</span><span class="p">,</span> <span class="s2">&quot;No packs found in the context. Ensure packs are generated before archiving.&quot;</span>
+	<span class="c1"># Ensure output directory exists</span>
+	<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ctx</span><span class="o">.</span><span class="n">output_directory</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+	<span class="n">consistent_time</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_consistent_timestamp</span><span class="p">(</span><span class="n">ctx</span><span class="p">)</span>
+
+	<span class="c1"># Create archives for each pack</span>
+	<span class="nd">@handle_error</span>
+	<span class="k">def</span> <span class="nf">handle_pack</span><span class="p">(</span><span class="n">pack</span><span class="p">:</span> <span class="n">DataPack</span> <span class="o">|</span> <span class="n">ResourcePack</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="c1"># Get pack name and type</span>
+		<span class="n">pack_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">project_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">pack</span><span class="o">.</span><span class="n">name</span> <span class="ow">or</span> <span class="s2">&quot;pack&quot;</span>
+
+		<span class="c1"># Determine pack type based on pack attributes</span>
+		<span class="n">pack_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;pack&quot;</span>
+		<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pack</span><span class="p">,</span> <span class="n">DataPack</span><span class="p">):</span>
+			<span class="n">pack_type</span> <span class="o">=</span> <span class="s2">&quot;datapack&quot;</span>
+		<span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pack</span><span class="p">,</span> <span class="n">ResourcePack</span><span class="p">):</span>
+			<span class="n">pack_type</span> <span class="o">=</span> <span class="s2">&quot;resource_pack&quot;</span>		<span class="c1"># Create archive filename</span>
+		<span class="n">archive_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">ctx</span><span class="o">.</span><span class="n">output_directory</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">pack_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">pack_type</span><span class="si">}</span><span class="s2">.zip&quot;</span>
+
+		<span class="c1"># Create zip archive using pack.dump() to avoid interfering with existing directories</span>
+		<span class="c1"># This approach writes pack contents directly to a zip file without modifying the original pack structure</span>
+
+		<span class="c1"># First pass: Create the zip file normally</span>
+		<span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">archive_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="n">zipfile</span><span class="o">.</span><span class="n">ZIP_DEFLATED</span><span class="p">,</span> <span class="n">compresslevel</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span> <span class="k">as</span> <span class="n">zip_file</span><span class="p">:</span>
+			<span class="n">pack</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">zip_file</span><span class="p">)</span>
+
+		<span class="c1"># Second pass: Read all contents and recreate with consistent timestamps</span>
+		<span class="c1"># This is necessary because beet&#39;s dump() uses origin.open() which bypasses writestr() completely</span>
+		<span class="n">temp_contents</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+		<span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">archive_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">temp_zip</span><span class="p">:</span>
+			<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">temp_zip</span><span class="o">.</span><span class="n">filelist</span><span class="p">:</span>
+				<span class="n">temp_contents</span><span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">filename</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp_zip</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span>
+
+		<span class="c1"># Recreate the zip file with proper timestamps and compression</span>
+		<span class="k">with</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">archive_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="n">zipfile</span><span class="o">.</span><span class="n">ZIP_DEFLATED</span><span class="p">,</span> <span class="n">compresslevel</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span> <span class="k">as</span> <span class="n">final_zip</span><span class="p">:</span>
+			<span class="k">for</span> <span class="n">filename</span><span class="p">,</span> <span class="n">content</span> <span class="ow">in</span> <span class="n">temp_contents</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+				<span class="n">info</span> <span class="o">=</span> <span class="n">ZipInfo</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">)</span>
+				<span class="n">info</span><span class="o">.</span><span class="n">date_time</span> <span class="o">=</span> <span class="n">consistent_time</span>
+				<span class="n">info</span><span class="o">.</span><span class="n">compress_type</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZIP_DEFLATED</span>
+				<span class="n">final_zip</span><span class="o">.</span><span class="n">writestr</span><span class="p">(</span><span class="n">info</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+
+	<span class="c1"># Process each pack in parallel</span>
+	<span class="n">multithreading</span><span class="p">(</span><span class="n">handle_pack</span><span class="p">,</span> <span class="n">ctx</span><span class="o">.</span><span class="n">packs</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ctx</span><span class="o">.</span><span class="n">packs</span><span class="p">))</span></div>
+
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Stoupy.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
