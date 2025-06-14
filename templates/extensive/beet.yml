@@ -22,8 +22,6 @@ ignore: []
 # A list of importable plugin strings
 require:
     - "bolt"
-    - "mecha.contrib.relative_location"
-    - "mecha.contrib.nested_location"
 
 # Takes a nested pack config, see PackConfig() documentation
 data_pack:
