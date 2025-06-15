@@ -38,7 +38,7 @@ def beet_default(ctx: Context):
 
     # Add a super stone block that can be crafted with 9 deepslate or stone, and has cobblestone as base block
     Mem.definitions["super_stone"] = {
-        "id": core.CUSTOM_BLOCK_VANILLA,												# Placeholder for the base block
+        "id": core.CUSTOM_BLOCK_VANILLA,											# Placeholder for the base block
         core.VANILLA_BLOCK: {"id": "minecraft:cobblestone", "apply_facing": False},	# Base block
         core.RESULT_OF_CRAFTING: [													# Crafting recipes (shaped and shapeless examples)
             {"type":"crafting_shaped","result_count":1,"group":"super_stone","category":"blocks","shape":["XXX","XXX","XXX"],"ingredients": {"X": core.ingr_repr("minecraft:stone")}},

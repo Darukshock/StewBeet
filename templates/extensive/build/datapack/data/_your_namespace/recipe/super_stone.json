@@ -15,38 +15,7 @@
 		"count": 1,
 		"components": {
 			"minecraft:item_model": "_your_namespace:super_stone",
-			"minecraft:item_name": {
-				"text": "Super Stone",
-				"italic": false,
-				"color": "white"
-			},
-			"minecraft:lore": [
-				[
-					"",
-					{
-						"text": "I",
-						"color": "white",
-						"italic": false,
-						"font": "_your_namespace:icons"
-					},
-					{
-						"text": " Extensive Template",
-						"italic": true,
-						"color": "blue"
-					}
-				]
-			],
-			"minecraft:custom_data": {
-				"_your_namespace": {
-					"super_stone": true
-				},
-				"smithed": {
-					"ignore": {
-						"functionality": true,
-						"crafting": true
-					}
-				}
-			}
+			...
 		}
 	}
 }
