@@ -16,7 +16,7 @@
 		"components": {
 			"minecraft:item_model": "_your_namespace:super_stone",
 			"minecraft:item_name": {
-				"text": "Super Stone",
+				"translate": "_your_namespace.super_stone",
 				"italic": false,
 				"color": "white"
 			},
@@ -30,7 +30,7 @@
 						"font": "_your_namespace:icons"
 					},
 					{
-						"text": " Extensive Template",
+						"translate": "_your_namespace.extensive_template",
 						"italic": true,
 						"color": "blue"
 					}

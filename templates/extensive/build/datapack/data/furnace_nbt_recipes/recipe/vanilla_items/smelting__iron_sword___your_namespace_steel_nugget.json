@@ -23,7 +23,7 @@
 			},
 			"minecraft:item_model": "_your_namespace:steel_nugget",
 			"minecraft:item_name": {
-				"text": "Steel Nugget",
+				"translate": "_your_namespace.steel_nugget",
 				"italic": false,
 				"color": "white"
 			},
@@ -37,7 +37,7 @@
 						"font": "_your_namespace:icons"
 					},
 					{
-						"text": " Extensive Template",
+						"translate": "_your_namespace.extensive_template",
 						"italic": true,
 						"color": "blue"
 					}

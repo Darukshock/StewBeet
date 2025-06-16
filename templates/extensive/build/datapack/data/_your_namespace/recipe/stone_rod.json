@@ -31,7 +31,7 @@
 			},
 			"minecraft:item_model": "_your_namespace:stone_rod",
 			"minecraft:item_name": {
-				"text": "Stone Rod",
+				"translate": "_your_namespace.stone_rod",
 				"italic": false,
 				"color": "white"
 			},
@@ -45,7 +45,7 @@
 						"font": "_your_namespace:icons"
 					},
 					{
-						"text": " Extensive Template",
+						"translate": "_your_namespace.extensive_template",
 						"italic": true,
 						"color": "blue"
 					}

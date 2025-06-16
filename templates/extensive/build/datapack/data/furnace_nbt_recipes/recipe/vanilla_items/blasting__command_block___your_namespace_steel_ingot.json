@@ -23,7 +23,7 @@
 			},
 			"minecraft:item_model": "_your_namespace:steel_ingot",
 			"minecraft:item_name": {
-				"text": "Steel Ingot",
+				"translate": "_your_namespace.steel_ingot",
 				"italic": false,
 				"color": "white"
 			},
@@ -37,7 +37,7 @@
 						"font": "_your_namespace:icons"
 					},
 					{
-						"text": " Extensive Template",
+						"translate": "_your_namespace.extensive_template",
 						"italic": true,
 						"color": "blue"
 					}
