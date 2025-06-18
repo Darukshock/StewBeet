@@ -19,5 +19,6 @@ github_config: dict = {
 	"project_name": "StewBeet",
 	"version": stewbeet_version,
 	"build_folder": cfg.output,
+	"endswith": [".zip"]
 }
 
