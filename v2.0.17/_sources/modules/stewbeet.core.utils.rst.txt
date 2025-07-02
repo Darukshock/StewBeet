@@ -1,0 +1,13 @@
+stewbeet.core.utils namespace
+=============================
+
+.. py:module:: stewbeet.core.utils
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   stewbeet.core.utils.io
+   stewbeet.core.utils.sounds
