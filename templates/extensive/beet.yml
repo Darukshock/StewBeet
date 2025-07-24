@@ -41,7 +41,9 @@ resource_pack:
 #     - Each sub-pipeline creates a temp context inheriting the parent context
 pipeline:
     - "src.setup_definitions" # User code
-    - "stewbeet.all" # All StewBeet plugins (yields to allow other plugins below to run before finalization)
+    - "stewbeet.all"    # All StewBeet plugins (yields to allow other plugins below to run before finalization)
+                        # Note: This may be harder to debug and you might not want all plugins,
+                        #  prefer using specific plugins like done in the basic template beet.yml file
     - "src.link" # User code
     - "mecha"
 

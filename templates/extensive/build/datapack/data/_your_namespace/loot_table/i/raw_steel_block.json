@@ -21,9 +21,7 @@
 								},
 								"minecraft:item_model": "_your_namespace:raw_steel_block",
 								"minecraft:item_name": {
-									"translate": "_your_namespace.raw_steel_block",
-									"italic": false,
-									"color": "white"
+									"translate": "_your_namespace.raw_steel_block"
 								},
 								"minecraft:lore": [
 									[

@@ -21,9 +21,7 @@
 								},
 								"minecraft:item_model": "_your_namespace:steel_dust",
 								"minecraft:item_name": {
-									"translate": "_your_namespace.steel_dust",
-									"italic": false,
-									"color": "white"
+									"translate": "_your_namespace.steel_dust"
 								},
 								"minecraft:lore": [
 									[

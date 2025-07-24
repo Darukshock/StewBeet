@@ -14,7 +14,7 @@ tag @s add _your_namespace.raw_steel_block
 tag @s add _your_namespace.vanilla.minecraft_raw_iron_block
 
 # Add a custom name
-data merge entity @s {CustomName: {"translate": "_your_namespace.raw_steel_block", italic: false, color: "white"}}
+data merge entity @s {CustomName: {"translate": "_your_namespace.raw_steel_block"}}
 
 # Modify item display entity to match the custom block
 item replace entity @s container.0 with minecraft:furnace[item_model="_your_namespace:raw_steel_block"]

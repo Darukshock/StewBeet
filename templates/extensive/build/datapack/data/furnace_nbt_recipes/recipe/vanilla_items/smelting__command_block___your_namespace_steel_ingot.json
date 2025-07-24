@@ -23,9 +23,7 @@
 			},
 			"minecraft:item_model": "_your_namespace:steel_ingot",
 			"minecraft:item_name": {
-				"translate": "_your_namespace.steel_ingot",
-				"italic": false,
-				"color": "white"
+				"translate": "_your_namespace.steel_ingot"
 			},
 			"minecraft:lore": [
 				[

@@ -35,9 +35,7 @@
 								],
 								"minecraft:item_model": "_your_namespace:steel_boots",
 								"minecraft:item_name": {
-									"translate": "_your_namespace.steel_boots",
-									"italic": false,
-									"color": "white"
+									"translate": "_your_namespace.steel_boots"
 								},
 								"minecraft:lore": [
 									[

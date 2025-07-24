@@ -45,9 +45,7 @@
 								],
 								"minecraft:item_model": "_your_namespace:steel_shovel",
 								"minecraft:item_name": {
-									"translate": "_your_namespace.steel_shovel",
-									"italic": false,
-									"color": "white"
+									"translate": "_your_namespace.steel_shovel"
 								},
 								"minecraft:lore": [
 									[

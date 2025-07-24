@@ -35,9 +35,7 @@
 								],
 								"minecraft:item_model": "_your_namespace:steel_helmet",
 								"minecraft:item_name": {
-									"translate": "_your_namespace.steel_helmet",
-									"italic": false,
-									"color": "white"
+									"translate": "_your_namespace.steel_helmet"
 								},
 								"minecraft:lore": [
 									[
