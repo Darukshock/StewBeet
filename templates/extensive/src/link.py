@@ -2,37 +2,37 @@
 # Imports
 from beet import Context
 from beet.core.utils import JsonDict
-from stewbeet import core
+from stewbeet.core import Mem, CustomOreGeneration
 from stewbeet.core.utils.io import *
 
 
 # Main entry point (ran just before making finalyzing the build process (zip, headers, lang, ...))
 def beet_default(ctx: Context):
     ns: str = ctx.project_id
-    definitions: JsonDict = core.Mem.definitions  # noqa: F841
+    definitions: JsonDict = Mem.definitions  # noqa: F841
 
     # Generate ores in the world
-    core.CustomOreGeneration.all_with_config(ore_configs = {
+    CustomOreGeneration.all_with_config(ore_configs = {
         "steel_ore": [
-            core.CustomOreGeneration(
+            CustomOreGeneration(
                 dimensions = ["minecraft:overworld","stardust:cavern","some_other:dimension"],
                 maximum_height = 50,
                 minimum_height = 0,
-                veins_per_region = 2,
+                veins_per_region = 1.2,
                 vein_size_logic = 0.4,
             )
         ],
         "deepslate_steel_ore": [
-            core.CustomOreGeneration(
+            CustomOreGeneration(
                 dimensions = ["minecraft:overworld"],
                 maximum_height = 0,
-                veins_per_region = 2,
+                veins_per_region = 1.2,
                 vein_size_logic = 0.4,
             ),
-            core.CustomOreGeneration(
+            CustomOreGeneration(
                 dimensions = ["stardust:cavern"],
                 maximum_height = 0,
-                veins_per_region = 8,
+                veins_per_region = 3.6,
                 vein_size_logic = 0.8,
             )
         ],
