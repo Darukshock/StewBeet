@@ -1,7 +1,9 @@
 
 #> _your_namespace:custom_blocks/steel_ore/replace_item
 #
-# @within	_your_namespace:custom_blocks/steel_ore/destroy
+# @executed	 as @n[type=item,nbt={...},distance=..1] 
+#
+# @within	_your_namespace:custom_blocks/steel_ore/destroy [ as @n[type=item,nbt={...},distance=..1] ]
 #
 
 # If silk touch applied

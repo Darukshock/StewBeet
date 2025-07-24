@@ -1,7 +1,9 @@
 
 #> _your_namespace:custom_blocks/super_stone/place_secondary
 #
-# @within	_your_namespace:custom_blocks/super_stone/place_main
+# @executed	 align xyz & positioned ~0.5 ~0.5 ~0.5 & at @s 
+#
+# @within	_your_namespace:custom_blocks/super_stone/place_main [ align xyz & positioned ~0.5 ~0.5 ~0.5 & at @s ]
 #
 
 # Add convention and utils tags, and the custom block tag

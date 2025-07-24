@@ -1,6 +1,8 @@
 
 #> _your_namespace:custom_blocks/_groups/minecraft_raw_iron_block
 #
+# @executed	 as @e[type=item_display,tag=...,tag=!...,predicate=!...] & at @s 
+#
 # @within	_your_namespace:custom_blocks/destroy
 #
 

@@ -1,6 +1,8 @@
 
 #> _your_namespace:custom_blocks/steel_block/second
 #
+# @executed	 as @e[tag=...] & at @s 
+#
 # @within	_your_namespace:custom_blocks/second
 #
 

@@ -1,6 +1,8 @@
 
 #> _your_namespace:advancements/unlock_recipes
 #
+# @executed	as the player & at current position
+#
 # @within	advancement _your_namespace:unlock_recipes
 #
 
